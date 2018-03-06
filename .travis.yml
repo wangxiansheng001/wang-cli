@@ -10,3 +10,5 @@ addons:
   ssh_known_hosts: 47.95.235.183
 after_success:
 - ssh root@47.95.235.183 'cd /home/testci && git clone https://github.com/wangxiansheng001/wang-cli.git'
+
+# sfsdf
