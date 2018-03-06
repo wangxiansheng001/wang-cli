@@ -1,0 +1,27 @@
+{
+  "name": "wang-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "colors": "^1.1.2",
+    "commander": "^2.13.0",
+    "git-clone": "^0.1.0",
+    "inquirer": "^5.0.0",
+    "request": "^2.83.0",
+    "shelljs": "^0.8.0"
+  },
+  "bin": {
+    "wang-cli": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BestDingSheng/dingsheng-cli.git"
+  }
+}
