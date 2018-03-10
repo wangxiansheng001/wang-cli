@@ -1,12 +1,21 @@
-var api = require('../lib');
-var program = require('commander');
-var chalk = require("chalk");
-var shell = require("shelljs");
-var clone = require("git-clone");
-var inquirer = require("inquirer");
-var weacher = require("../lib/weacher.js");
 
-program = varsion(require("../package").varsion).description("一个可以翻译，查询天气和快速创建Vue和react项目的命令工具")
+var {
+    api
+} = require('../lib');
+var program = require('commander'),
+    chalk = require('chalk');
+var shell = require('shelljs')
+var clone = require('git-clone')
+var inquirer =require('inquirer')
+var weather = require('../lib/weather.js')
+
+program
+    .version(require('../package').version)
+.description('一个可以翻译,查询天气和快速创建vue和react项目的命令行工具')
+
+
+
+
 
 program.command("ts [content]")
 .description("这是一个翻译命令,如wang-cli ts chrome")
